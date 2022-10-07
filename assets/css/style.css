@@ -61,11 +61,11 @@
     font-style: normal;
 } */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
 
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
 
@@ -93,9 +93,7 @@ font-family: 'Amatic SC', cursive;*/
 
 body {
     /* font-family: var(--thm-med-font); */
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Source Sans Pro', sans-serif;
-    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Cairo', sans-serif;
     color: #343434;
     font-size: 16px;
     line-height: 34px;
@@ -126,7 +124,7 @@ h5,
 h6 {
     text-transform: uppercase;
     /* font-family: var(--heading-font); */
-    /* font-family: 'Cairo', sans-serif; */
+    font-family: 'Cairo', sans-serif;
     font-weight: 700;
 }
 
@@ -135,12 +133,8 @@ h6 {
 }
 
 .main-logo {
-    /* width: 6rem; */
+    width: 6rem;
     /* position: absolute; */
-    background-color: white;
-    height: 5rem;
-    padding: 10px;
-    border-radius: 7px;
 }
 
 .page-wrapper {
@@ -769,10 +763,11 @@ h6 {
 }
 
 .topbar-one__middle {
-    position: absolute;
-    top: 50%;
+    width: 70%;
+    /* position: absolute; */
+    /* top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%); */
 }
 
 .topbar-one__middle a {
@@ -831,6 +826,19 @@ h6 {
 }
 
 
+
+/*--------------------------------------------------------------
+# Scrolling Ticker
+--------------------------------------------------------------*/
+
+.iframe body{
+    color: #fff;
+}
+
+b .Mainname{
+    color: #fff !important;
+}
+
 /*--------------------------------------------------------------
 # Main Menu
 --------------------------------------------------------------*/
@@ -851,9 +859,9 @@ h6 {
 
 .main-nav__header-one {
     position: relative;
-    /* background-color: rgba(255, 255, 2255, .7); */
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(255,255,255,0.6964985823430935) 100%); 
+    background-color: rgba(255, 255, 2255, .7);
+    /* background: rgb(255,255,255); */
+    /* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(255,255,255,0.6964985823430935) 100%);  */
 }
 
 .main-nav__header-one .container,
@@ -1051,7 +1059,7 @@ h6 {
 
 .main-nav__main-navigation .main-nav__navigation-box>li>ul>li>ul {
     top: 0;
-    left: 100%;
+    right: 100%;
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
     visibility: hidden;
